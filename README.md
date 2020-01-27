@@ -29,14 +29,23 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
+The Document Object Model (DOM) is a cross-platform and language-independent interface that treats an XML or HTML document as a tree structure wherein each node is an object representing a part of the document.
+The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree; with them one can change the structure, style or content of a document. Nodes can have event handlers attached to them. Once an event is triggered, the event handlers get executed.
 
 2. What is an event?
+Every user interaction with a site is an event: a click, moving the mouse, scrolling the page, pressing a key on the keyboard, these are all events on the page, and the browser can detect all of them.
+There are tons of different events the browser tracks. When an event happens on a page, it is known as a trigger.
 
 3. What is an event listener?
+With Javascript we are able to listen for specific events on specific elements. Did a user click that button? Did a users mouse hover over an element? Was there text entered into the input field?
+There are dozens of events an element can listen for. When one of those events happens on that element, we can do something about it. The tracking process and subsequent action taken is called an event listener. We put an event listener on an element and give it a callback. When that event is triggered on the element, the callback is run.
 
 4. Why would we convert a NodeList into an Array?
+A NodeList must first be converted into an Array in order to iterate over all of the included nodes and enable us to operate on the array items. 
+In other words, a nodelist is an array-like object which appears as an array, but cannot be used with array methods. Therefore, we have to convert it first to an actual array of DOM elements before we are able to use them with various array methods.
 
 5. What is a component?
+Components are reusable pieces of code that can be used to build elements sharing functionality and styling. By building on repeating patterns and creating components we can keep our code readable, reusable, and most importantly dry.
 
 ### Git Set up
 
